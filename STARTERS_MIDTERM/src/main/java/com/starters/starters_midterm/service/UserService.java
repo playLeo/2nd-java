@@ -16,10 +16,7 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
-    /*
-    이메일 중복확인 추가
-    패스워드 암호화 추가
-     */
+
     public void createUser(String email, String password, String name, String phoneNum, UserRole role) {
 
         User user = User.builder()

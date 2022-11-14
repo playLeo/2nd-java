@@ -2,7 +2,7 @@ package com.starters.starters_midterm.model.Application;
 
 import com.starters.starters_midterm.model.Lesson.Lesson;
 import com.starters.starters_midterm.model.User.User;
-import lombok.Data;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -25,6 +25,16 @@ public class ApplicationWriteDto {
                 .motivation(motivation)
                 .user(user)
                 .build();
+    }
+
+    @Builder
+    public ApplicationWriteDto(String motivation, Long lessonId, String futureCareer, ApplicationStatus status) {
+
+        this.motivation = motivation;
+        this.lessonId = lessonId;
+        this.futureCareer = futureCareer;
+        this.status = status;
+
     }
 
 }

@@ -1,9 +1,6 @@
 package com.starters.starters_midterm.model.Lesson;
 
 import lombok.*;
-import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedDate;
-
 import javax.persistence.*;
 import java.time.LocalDate;
 
