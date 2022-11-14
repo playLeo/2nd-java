@@ -1,4 +1,8 @@
 package com.starters.starters_midterm.repository;
 
-public interface LessonRepository {
+
+import com.starters.starters_midterm.model.Lesson.Lesson;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface LessonRepository extends JpaRepository<Lesson, Long> {
 }
