@@ -43,7 +43,6 @@ public class ApplicationClosed {
                     applicationService.fail(failApplication.getId());
                 }
             }
-
         }
     }
 }
